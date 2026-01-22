@@ -42,9 +42,31 @@ var total = first + second;
 // console.log(total);
 // console.log(parseFloat(total.toFixed(3)));
 
-const num = 50 / 0;
-console.log(num);
+var num = 50 / 0;
+// console.log(num);
 
+var num1 = -50 / 0;
+// console.log(num1);
 
-const num1 = -50 / 0;
-console.log(num1);
+// short hand operator
+// sum
+var price = 35;
+price += 10;
+// console.log(price);
+
+// sub
+var apple = 20;
+apple -= 14;
+// console.log(apple);
+
+// concat operator
+var first = "mobarok";
+var second = "tobarok";
+
+var fullName = first + second;
+// console.log(fullName);
+
+console.log(40 + "2");
+console.log(40 + 2);
+console.log(40 - "2");
+console.log(40 - 2);
