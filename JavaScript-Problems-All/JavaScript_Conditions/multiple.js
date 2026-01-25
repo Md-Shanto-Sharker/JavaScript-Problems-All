@@ -34,9 +34,31 @@ const hasCar = false;
 // }
 
 // ----------complex conditions-------------
-if ((salary > 25000 && hasCar == true) || isBcs == true) {
-  console.log("eso baba kobul");
-}
-if ((salary > 25000 || hasCar == true) && isBcs == true) {
-  console.log("noo");
+// if ((salary > 25000 && hasCar == true) || isBcs == true) {
+//   console.log("eso baba kobul");
+// }
+// if ((salary > 25000 || hasCar == true) && isBcs == true) {
+//   console.log("noo");
+// }
+
+// -------------------------------------
+// problem-2:
+// const orderAmount = 1100;
+// if(orderAmount>=1000){
+//   console.log('Free Delivery');
+// }else{
+//   console.log('Delivery Charge 80 taka');
+// }
+
+// ------Problem-2----------------
+const balance = 7000;
+const withDraw = 700;
+if (withDraw <= balance) {
+  if (withDraw % 500 === 0) {
+    console.log("WithDraw Successful");
+  } else {
+    console.log("Enter amount multiple of 500");
+  }
+} else {
+  console.log("Insufficient Balance");
 }
