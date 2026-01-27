@@ -48,3 +48,10 @@
 //   }
 //   number++;
 // }
+
+// ----------------------
+let number = 200;
+while (number >= 100) {
+  console.log(number);
+  number--;
+}
