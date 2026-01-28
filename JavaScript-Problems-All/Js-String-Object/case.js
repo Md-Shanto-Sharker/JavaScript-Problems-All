@@ -20,10 +20,10 @@ const book = "chemistry";
 // }
 
 // ---------------------------------------
-const drink = " water";
-const liquid = "  water  ";
-if (drink.trim() === liquid.trim()) {
-  console.log("pani er opor nam life");
-} else {
-  console.log("somudre pani ase khaite pari nah");
-}
+// const drink = " water";
+// const liquid = "  water  ";
+// if (drink.trim() === liquid.trim()) {
+//   console.log("pani er opor nam life");
+// } else {
+//   console.log("somudre pani ase khaite pari nah");
+// }
