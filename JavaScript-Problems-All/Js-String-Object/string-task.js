@@ -56,10 +56,22 @@
 // Task-5:
 // Capitalize Every first Letter of each word in a String
 
+// let str = "hello world from javascript";
+// let words = str.split(" ");
+// for (let i = 0; i < words.length; i++) {
+//   words[i] = words[i][0].toUpperCase() + words[i].slice(1);
+// }
+// let result = words.join(" ");
+// console.log(result);
+
+// another styles to solved
 let str = "hello world from javascript";
+let mainString = [];
 let words = str.split(" ");
-for (let i = 0; i < words.length; i++) {
-  words[i] = words[i][0].toUpperCase() + words[i].slice(1);
+for (let i of words) {
+  const newWord = i[0].toUpperCase() + i.slice(1);
+  mainString.push(newWord);
 }
-let result = words.join(" ");
-console.log(result);
+console.log(mainString.join(" "));
+
+// console.log(words);
