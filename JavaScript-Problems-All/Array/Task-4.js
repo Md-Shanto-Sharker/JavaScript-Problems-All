@@ -6,3 +6,11 @@
 // Output:
 
 // 'person working hard a am I'
+
+const statement = "I am a hard working person";
+let reversed = [];
+const newStatement = statement.split(" ");
+for (let i of newStatement) {
+  reversed.unshift(i);
+}
+console.log("'" + reversed.join(" ") + "'");
