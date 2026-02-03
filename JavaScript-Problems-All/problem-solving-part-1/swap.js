@@ -15,10 +15,3 @@
 // [x, y] = [y, x];
 // console.log(x, y);
 
-
-
-for (var i = 0; i < 5; i++) {
- 	 setTimeout(function () {
- 	console.log(i);
-  }, 100);
-}
