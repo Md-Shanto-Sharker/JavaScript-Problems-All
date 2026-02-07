@@ -14,6 +14,21 @@
 // Input:  "Hello123"
 // Output: { valid: true, reasons: [] }
 
-function checkPassword(password) {}
-const output = "helloWorld1";
-console.log(checkPassword(output));
+// function checkPassword(password) {
+
+// }
+// const output = "helloWorld1";
+// console.log(checkPassword(output));
+
+
+
+
+// ---------others problems in code wars-------
+function reverseSeq(n) {
+  const result = [];
+  for (let i = n; i >= 1; i--) {
+    result.push(i);
+  }
+  return result;
+}
+console.log(reverseSeq(5));
