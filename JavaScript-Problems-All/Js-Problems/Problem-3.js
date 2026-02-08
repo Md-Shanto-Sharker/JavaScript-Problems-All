@@ -31,6 +31,9 @@ function checkPassword(password) {
       hasUppercase = true;
     }
   }
+  if (length < 8) {
+    reasons.push("Missing length");
+  }
   if (!hasNumber) {
     reasons.push("Missing number");
   }
@@ -49,4 +52,4 @@ function checkPassword(password) {
 
 const output = "helloWorld1";
 console.log(checkPassword(output));
-console.log(checkPassword("hello123"));
+console.log(checkPassword("hellO123"));
