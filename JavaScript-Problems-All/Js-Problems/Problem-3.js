@@ -14,21 +14,39 @@
 // Input:  "Hello123"
 // Output: { valid: true, reasons: [] }
 
-// function checkPassword(password) {
+function checkPassword(password) {
+  let reasons = [];
+  let length = password.length;
 
-// }
-// const output = "helloWorld1";
-// console.log(checkPassword(output));
+  let hasUppercase = false;
+  let hasNumber = false;
+  let hasSpace = password.includes(" ");
 
-
-
-
-// ---------others problems in code wars-------
-function reverseSeq(n) {
-  const result = [];
-  for (let i = n; i >= 1; i--) {
-    result.push(i);
+  for (let i = 0; i < length; i++) {
+    let character = password[i];
+    if (character >= "0" && character <= "9") {
+      hasNumber = true;
+    }
+    if (character >= "A" && character <= "Z") {
+      hasUppercase = true;
+    }
   }
-  return result;
+  if (!hasNumber) {
+    reasons.push("Missing number");
+  }
+  if (!hasUppercase) {
+    reasons.push("Missing Uppercase");
+  }
+  if (hasSpace) {
+    reasons.push("Space found");
+  }
+  let isValid = reasons.length == 0;
+  return {
+    valid: isValid,
+    reasons,
+  };
 }
-console.log(reverseSeq(5));
+
+const output = "helloWorld1";
+console.log(checkPassword(output));
+console.log(checkPassword("hello123"));
