@@ -29,12 +29,34 @@
 
 //*****String */*********** */
 
-var str = "String";
-var str2 = "String";
-var str3 = `String`;
-var str4 = String("sdffsdfsd");
-var str5 = String(10);
-var str6 = String(3.1416);
-console.log(typeof str4, str4);
-console.log(typeof str5, str5);
-console.log(typeof str6, str6);
+// var str = "String";
+// var str2 = "String";
+// var str3 = `String`;
+// var str4 = String("sdffsdfsd");
+// var str5 = String(10);
+// var str6 = String(3.1416);
+// console.log(typeof str4, str4);
+// console.log(typeof str5, str5);
+// console.log(typeof str6, str6);
+
+//*****Booleans */*********** */
+// var b1 = true;
+// var b2 = false;
+// console.log(b1, b2);
+
+// var b3 = Boolean(true);
+// var b4 = Boolean(false);
+// console.log(b3);
+// console.log(b4);
+
+//*****null and Undefined */*********** */
+
+// var abc;
+// var xyz = null;
+// console.log(abc, xyz);
+
+var hex = 0xff;
+console.log(hex);
+
+var oct = 0o756;
+console.log(oct);
